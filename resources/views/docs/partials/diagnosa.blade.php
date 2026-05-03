@@ -1,5 +1,5 @@
 <section id="diagnosa" class="mb-5">
-    <h2 class="h4 fw-bold">Diagnosa <span class="badge bg-warning text-dark">PROTECTED</span></h2>
+    <h2 class="h4 fw-bold">Diagnosa <small class="text-muted">🔒</small></h2>
     <p class="text-muted">Endpoint untuk mengelola relasi diagnosa antara Pasien dan Penyakit. Semua endpoint memerlukan autentikasi Bearer token.</p>
     <hr>
 
@@ -9,8 +9,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#diagnosa-store">
-                    <span class="badge bg-success me-2">POST</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-success me-2">POST</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/pasien/{id}/diagnosa</code>
                     <span class="text-muted small">— Tambah diagnosa ke pasien</span>
                 </button>
@@ -74,8 +74,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#diagnosa-destroy">
-                    <span class="badge bg-danger me-2">DELETE</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-danger me-2">DELETE</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/pasien/{id}/diagnosa/{penyakit_id}</code>
                     <span class="text-muted small">— Hapus diagnosa dari pasien</span>
                 </button>

@@ -3,10 +3,12 @@
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CommentController;
 use App\Http\Controllers\DiagnosaController;
+use App\Http\Controllers\MedicineController;
 use App\Http\Controllers\PasienController;
 use App\Http\Controllers\PenyakitController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\VehicleController;
 use Illuminate\Support\Facades\Route;
 
 // ─── Route Publik: Autentikasi ────────────────────────────────────────────────
@@ -19,6 +21,16 @@ Route::apiResource('/posts', PostController::class)->only([
 
 // ─── Route Publik: Comment (CRUD) ─────────────────────────────────────────────
 Route::apiResource('/comments', CommentController::class)->only([
+    'index', 'show', 'store', 'update', 'destroy',
+]);
+
+// ─── Route Publik: Vehicle (CRUD) ─────────────────────────────────────────────
+Route::apiResource('/vehicles', VehicleController::class)->only([
+    'index', 'show', 'store', 'update', 'destroy',
+]);
+
+// ─── Route Publik: Medicine (CRUD) ────────────────────────────────────────────
+Route::apiResource('/medicines', MedicineController::class)->only([
     'index', 'show', 'store', 'update', 'destroy',
 ]);
 

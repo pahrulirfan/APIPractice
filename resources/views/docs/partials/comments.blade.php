@@ -1,5 +1,5 @@
 <section id="comments" class="mb-5">
-    <h2 class="h4 fw-bold">Comment <span class="badge bg-success">PUBLIC</span></h2>
+    <h2 class="h4 fw-bold">Comment </h2>
     <p class="text-muted">Endpoint untuk mengelola data comment. Semua endpoint bersifat publik dan tidak memerlukan autentikasi.</p>
     <hr>
 
@@ -9,8 +9,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#comments-index">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-primary me-2">GET</strong>
                     <code class="me-2">/api/comments</code>
                     <span class="text-muted small">— Daftar semua comment</span>
                 </button>
@@ -42,8 +41,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#comments-show">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-primary me-2">GET</strong>
                     <code class="me-2">/api/comments/{id}</code>
                     <span class="text-muted small">— Detail comment + post terkait</span>
                 </button>
@@ -88,8 +86,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#comments-by-post">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-primary me-2">GET</strong>
                     <code class="me-2">/api/posts/{id}/comments</code>
                     <span class="text-muted small">— Comments milik post tertentu</span>
                 </button>
@@ -128,8 +125,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#comments-store">
-                    <span class="badge bg-success me-2">POST</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-success me-2">POST</strong>
                     <code class="me-2">/api/comments</code>
                     <span class="text-muted small">— Buat comment baru</span>
                 </button>
@@ -178,8 +174,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#comments-update">
-                    <span class="badge bg-warning text-dark me-2">PUT</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-warning me-2">PUT</strong>
                     <code class="me-2">/api/comments/{id}</code>
                     <span class="text-muted small">— Update comment</span>
                 </button>
@@ -224,8 +219,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#comments-destroy">
-                    <span class="badge bg-danger me-2">DELETE</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-danger me-2">DELETE</strong>
                     <code class="me-2">/api/comments/{id}</code>
                     <span class="text-muted small">— Hapus comment</span>
                 </button>

@@ -1,5 +1,5 @@
 <section id="auth" class="mb-5">
-    <h2 class="h4 fw-bold">Autentikasi <span class="badge bg-success">PUBLIC</span></h2>
+    <h2 class="h4 fw-bold">Autentikasi</h2>
     <p class="text-muted">Endpoint untuk login dan logout pengguna menggunakan Laravel Sanctum.</p>
     <hr>
 
@@ -9,8 +9,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#auth-login">
-                    <span class="badge bg-success me-2">POST</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-success me-2">POST</strong>
                     <code class="me-2">/api/login</code>
                     <span class="text-muted small">— Login dan dapatkan token</span>
                 </button>
@@ -53,8 +52,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#auth-logout">
-                    <span class="badge bg-success me-2">POST</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-success me-2">POST</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/logout</code>
                     <span class="text-muted small">— Logout dan cabut token</span>
                 </button>

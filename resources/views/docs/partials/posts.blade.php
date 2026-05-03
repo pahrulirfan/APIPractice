@@ -1,5 +1,5 @@
 <section id="posts" class="mb-5">
-    <h2 class="h4 fw-bold">Post <span class="badge bg-success">PUBLIC</span></h2>
+    <h2 class="h4 fw-bold">Post </h2>
     <p class="text-muted">Endpoint untuk mengelola data post. Semua endpoint bersifat publik dan tidak memerlukan autentikasi.</p>
     <hr>
 
@@ -9,8 +9,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#posts-index">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-primary me-2">GET</strong>
                     <code class="me-2">/api/posts</code>
                     <span class="text-muted small">— Daftar semua post</span>
                 </button>
@@ -42,8 +41,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#posts-show">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-primary me-2">GET</strong>
                     <code class="me-2">/api/posts/{id}</code>
                     <span class="text-muted small">— Detail post + comments</span>
                 </button>
@@ -92,8 +90,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#posts-store">
-                    <span class="badge bg-success me-2">POST</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-success me-2">POST</strong>
                     <code class="me-2">/api/posts</code>
                     <span class="text-muted small">— Buat post baru</span>
                 </button>
@@ -142,8 +139,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#posts-update">
-                    <span class="badge bg-warning text-dark me-2">PUT</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-warning me-2">PUT</strong>
                     <code class="me-2">/api/posts/{id}</code>
                     <span class="text-muted small">— Update post</span>
                 </button>
@@ -189,8 +185,7 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#posts-destroy">
-                    <span class="badge bg-danger me-2">DELETE</span>
-                    <span class="badge bg-success me-2">PUBLIC</span>
+                    <strong class="text-danger me-2">DELETE</strong>
                     <code class="me-2">/api/posts/{id}</code>
                     <span class="text-muted small">— Hapus post + comments</span>
                 </button>

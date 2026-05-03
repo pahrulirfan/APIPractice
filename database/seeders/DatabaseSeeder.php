@@ -3,10 +3,12 @@
 namespace Database\Seeders;
 
 use App\Models\Comment;
+use App\Models\Medicine;
 use App\Models\Pasien;
 use App\Models\Penyakit;
 use App\Models\Post;
 use App\Models\User;
+use App\Models\Vehicle;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -199,6 +201,48 @@ class DatabaseSeeder extends Seeder
 
         foreach ($diagnosaMap as $pasienIndex => $pivotData) {
             $pasienList[$pasienIndex]->penyakit()->syncWithoutDetaching($pivotData);
+        }
+
+        // ─── Vehicles ─────────────────────────────────────────────────────────
+        $vehiclesData = [
+            ['model' => 'Civic',     'type' => 'Sedan', 'manufacturer' => 'Honda'],
+            ['model' => 'Accord',    'type' => 'Sedan', 'manufacturer' => 'Honda'],
+            ['model' => 'CR-V',      'type' => 'SUV',   'manufacturer' => 'Honda'],
+            ['model' => 'Camry',     'type' => 'Sedan', 'manufacturer' => 'Toyota'],
+            ['model' => 'Fortuner',  'type' => 'SUV',   'manufacturer' => 'Toyota'],
+            ['model' => 'Avanza',    'type' => 'MPV',   'manufacturer' => 'Toyota'],
+            ['model' => 'X-Trail',   'type' => 'SUV',   'manufacturer' => 'Nissan'],
+            ['model' => 'Livina',    'type' => 'MPV',   'manufacturer' => 'Nissan'],
+            ['model' => 'Mazda3',    'type' => 'Sedan', 'manufacturer' => 'Mazda'],
+            ['model' => 'CX-5',      'type' => 'SUV',   'manufacturer' => 'Mazda'],
+        ];
+
+        foreach ($vehiclesData as $data) {
+            Vehicle::updateOrCreate(
+                ['model' => $data['model'], 'manufacturer' => $data['manufacturer']],
+                $data
+            );
+        }
+
+        // ─── Medicines ────────────────────────────────────────────────────────
+        $medicinesData = [
+            ['name' => 'Paracetamol',    'brand' => 'Panadol',      'manufacturer' => 'GlaxoSmithKline'],
+            ['name' => 'Ibuprofen',      'brand' => 'Proris',       'manufacturer' => 'Tempo Scan Pacific'],
+            ['name' => 'Amoxicillin',    'brand' => 'Amoxsan',      'manufacturer' => 'Sanbe Farma'],
+            ['name' => 'Omeprazole',     'brand' => 'Omepros',      'manufacturer' => 'Kalbe Farma'],
+            ['name' => 'Cetirizine',     'brand' => 'Incidal',      'manufacturer' => 'Interbat'],
+            ['name' => 'Metformin',      'brand' => 'Glucophage',   'manufacturer' => 'Merck'],
+            ['name' => 'Amlodipine',     'brand' => 'Norvask',      'manufacturer' => 'Pfizer'],
+            ['name' => 'Simvastatin',    'brand' => 'Lipinorm',     'manufacturer' => 'Dexa Medica'],
+            ['name' => 'Captopril',      'brand' => 'Tenofax',      'manufacturer' => 'Hexpharm'],
+            ['name' => 'Ranitidine',     'brand' => 'Rantin',       'manufacturer' => 'Sanbe Farma'],
+        ];
+
+        foreach ($medicinesData as $data) {
+            Medicine::updateOrCreate(
+                ['name' => $data['name'], 'brand' => $data['brand']],
+                $data
+            );
         }
     }
 }

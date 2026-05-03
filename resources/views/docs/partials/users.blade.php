@@ -1,5 +1,5 @@
 <section id="users" class="mb-5">
-    <h2 class="h4 fw-bold">User <span class="badge bg-warning text-dark">PROTECTED</span></h2>
+    <h2 class="h4 fw-bold">User <small class="text-muted">🔒</small></h2>
     <p class="text-muted">Endpoint untuk mengelola data user. Semua endpoint memerlukan autentikasi Bearer token.</p>
     <hr>
 
@@ -9,8 +9,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#users-index">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-primary me-2">GET</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/users</code>
                     <span class="text-muted small">— Daftar semua user</span>
                 </button>
@@ -51,8 +51,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#users-show">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-primary me-2">GET</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/users/{id}</code>
                     <span class="text-muted small">— Detail user</span>
                 </button>
@@ -91,8 +91,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#users-store">
-                    <span class="badge bg-success me-2">POST</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-success me-2">POST</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/users</code>
                     <span class="text-muted small">— Buat user baru</span>
                 </button>
@@ -143,8 +143,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#users-update">
-                    <span class="badge bg-warning text-dark me-2">PUT</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-warning me-2">PUT</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/users/{id}</code>
                     <span class="text-muted small">— Update user</span>
                 </button>
@@ -193,8 +193,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#users-destroy">
-                    <span class="badge bg-danger me-2">DELETE</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-danger me-2">DELETE</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/users/{id}</code>
                     <span class="text-muted small">— Hapus user</span>
                 </button>

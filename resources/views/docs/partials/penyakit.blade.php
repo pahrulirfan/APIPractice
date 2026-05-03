@@ -1,5 +1,5 @@
 <section id="penyakit" class="mb-5">
-    <h2 class="h4 fw-bold">Penyakit <span class="badge bg-warning text-dark">PROTECTED</span></h2>
+    <h2 class="h4 fw-bold">Penyakit <small class="text-muted">🔒</small></h2>
     <p class="text-muted">Endpoint untuk mengelola data penyakit. Semua endpoint memerlukan autentikasi Bearer token.</p>
     <hr>
 
@@ -9,8 +9,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#penyakit-index">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-primary me-2">GET</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/penyakit</code>
                     <span class="text-muted small">— Daftar semua penyakit</span>
                 </button>
@@ -44,8 +44,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#penyakit-show">
-                    <span class="badge bg-primary me-2">GET</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-primary me-2">GET</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/penyakit/{id}</code>
                     <span class="text-muted small">— Detail penyakit + daftar pasien</span>
                 </button>
@@ -92,8 +92,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#penyakit-store">
-                    <span class="badge bg-success me-2">POST</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-success me-2">POST</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/penyakit</code>
                     <span class="text-muted small">— Buat penyakit baru</span>
                 </button>
@@ -143,8 +143,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#penyakit-update">
-                    <span class="badge bg-warning text-dark me-2">PUT</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-warning me-2">PUT</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/penyakit/{id}</code>
                     <span class="text-muted small">— Update penyakit</span>
                 </button>
@@ -191,8 +191,8 @@
         <div class="accordion-item">
             <h2 class="accordion-header">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#penyakit-destroy">
-                    <span class="badge bg-danger me-2">DELETE</span>
-                    <span class="badge bg-warning text-dark me-2">PROTECTED</span>
+                    <strong class="text-danger me-2">DELETE</strong>
+                    <small class="text-muted me-2">🔒</small>
                     <code class="me-2">/api/penyakit/{id}</code>
                     <span class="text-muted small">— Hapus penyakit + data diagnosa</span>
                 </button>

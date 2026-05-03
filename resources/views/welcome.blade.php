@@ -11,7 +11,10 @@
     <nav class="navbar navbar-dark bg-dark">
         <div class="container">
             <span class="navbar-brand fw-semibold">API Practice</span>
-            <a href="/docs" class="btn btn-outline-light btn-sm">Dokumentasi API</a>
+            <div class="d-flex gap-2">
+                <a href="/docs" class="btn btn-outline-light btn-sm">Dokumentasi API</a>
+                <a href="/data" class="btn btn-outline-light btn-sm">Data Viewer</a>
+            </div>
         </div>
     </nav>
 
@@ -45,10 +48,12 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <h6 class="card-title fw-semibold">API Publik</h6>
-                                <p class="card-text text-muted small">CRUD Post dan Comment. Dapat diakses tanpa autentikasi.</p>
+                                <p class="card-text text-muted small">CRUD Post, Comment, Vehicle, dan Medicine. Dapat diakses tanpa autentikasi.</p>
                                 <div class="mt-2">
                                     <code class="small text-success d-block">GET /api/posts</code>
                                     <code class="small text-success d-block">GET /api/comments</code>
+                                    <code class="small text-success d-block">GET /api/vehicles</code>
+                                    <code class="small text-success d-block">GET /api/medicines</code>
                                 </div>
                             </div>
                         </div>
@@ -75,7 +80,7 @@
                             <tbody>
                                 <tr>
                                     <td class="text-muted" style="width:140px">Framework</td>
-                                    <td>Laravel 11</td>
+                                    <td>Laravel 13</td>
                                 </tr>
                                 <tr>
                                     <td class="text-muted">Autentikasi</td>
@@ -83,7 +88,7 @@
                                 </tr>
                                 <tr>
                                     <td class="text-muted">Database</td>
-                                    <td>SQLite / MySQL</td>
+                                    <td>MySQL</td>
                                 </tr>
                                 <tr>
                                     <td class="text-muted">Testing</td>
@@ -100,6 +105,7 @@
 
                 <div class="d-flex gap-2">
                     <a href="/docs" class="btn btn-dark">Lihat Dokumentasi API</a>
+                    <a href="/data" class="btn btn-primary">Lihat Data Viewer</a>
                     <a href="/api/posts" class="btn btn-outline-secondary">Coba GET /api/posts</a>
                 </div>
 
@@ -109,7 +115,7 @@
     </div>
 
     <footer class="border-top mt-5 py-3 text-center text-muted small">
-        API Practice &mdash; Laravel 11 + Bootstrap 5
+        API Practice &mdash; Laravel 13 + Bootstrap 5
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
